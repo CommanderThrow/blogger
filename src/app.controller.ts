@@ -1,5 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
-import type { AppService } from './app.service';
+// biome-ignore lint/style/useImportType: <It used for the constructor, so it has to be ignored>
+import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
